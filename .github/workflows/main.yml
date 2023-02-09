@@ -1,4 +1,4 @@
-name: Deploy to AWS Windows Instance
+name: Deploy  AWS Windows Instance
 
 on:
   push:
@@ -21,9 +21,9 @@ jobs:
       with:
         aws-access-key-id: AKIAWNZAYHOKNOWUJKNG
         aws-secret-access-key: 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
-        aws-region: ${{ env.AWS_REGION }}
+        aws-region:  ap-south-1
 
-    - name: Deploy code to AWS Windows Instance
+    - name: Deploy AWS Windows Instance
       uses: aws-actions/amazon-ec2-instance-control@v1
       with:
         command: copy
