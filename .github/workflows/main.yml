@@ -20,7 +20,7 @@ jobs:
       uses: aws-actions/setup-aws-cli@v1
       with:
         aws-access-key-id: AKIAWNZAYHOKNOWUJKNG
-        aws-secret-access-key: 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
+        aws-secret-access-key:oYV6GYEqmZsmWggbzLI/NxAGCWX1EJcel9T2MnrZ
         aws-region:  ap-south-1
 
     - name: Deploy AWS Windows Instance
