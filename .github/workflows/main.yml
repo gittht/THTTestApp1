@@ -20,13 +20,13 @@ jobs:
       uses: aws-actions/setup-aws-cli@v1
       with:
         aws-access-key-id: AKIAWNZAYHOKNOWUJKNG
-        aws-secret-access-key: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
+        aws-secret-access-key: oYV6GYEqmZsmWggbzLI/NxAGCWX1EJcel9T2MnrZ
         aws-region: ${{ env.AWS_REGION }}
 
     - name: Deploy code to AWS Windows Instance
       uses: aws-actions/amazon-ec2-instance-control@v1
       with:
         command: copy
-        instance-ids:i-0072ec5be79770c7a
+        instance-ids: i-0072ec5be79770c7a
         source: .
         destination: C:\inetpub\wwwroot
